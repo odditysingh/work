@@ -65,7 +65,7 @@
     </section>
     <!-- Projects Section -->
     <div class="col-lg-8 mx-auto">
-      <img class="img-fluid" src="img/twisterheader.png" alt="">
+      <img class="img-fluid" src="img/bs-04.jpg" alt="">
     </div>
     <section id="#" class="about-section text-center">
         <!-- Project Two Row -->
@@ -86,89 +86,78 @@
 
         <!-- Game Description -->
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-black">BendSwipe: Design Rationale</h2>
+            <h2 class="text-black">Design Rationale</h2>
             <p class="text-black-50">
               We chose a combination of bend gestures and touch supported swipe gesture on the backside of the flexible handheld device to reduce the problem of occlusion and regripping.
               We chose a center bend gesture due to its ease of use and intuitiveness identified in the literature. Swiping the index finger in a particular direction while performing the center bend zooms in the direction of swipe.
               </p>
-              <div class="col-lg-10 mx-auto">
-                <img class="img-fluid" src="img/methodology.jpg" alt="">
-              </div>
-              <p class="text-black-50">
-                <i>The Process of Digital Augmentation : Breaking components of the original and adding new components for the digital.</i>
-              </p>
 
-<h4 class="text-black">Design Rationale</h4>
+<h2 class="text-black">Interaction Design</h2>
+<p class="text-black-50">Zoom-in and out is triggered by performing a bend and swipe gesture simultaneously.The direction of bend (in or out) detrmines the choice between zooming in and out. The direction of swipe determined the direction in which the zooming happens. The zooming is performed for as long the both the gestures are detected.  </p>
+<h4 class="text-black">Zooming In</h4>
 <p class="text-black-50">
-  We choose a whole-body game, Twister for the purpose of digital augmentation. Twister is a traditional game that has been
-  played since 1964, its popularity can be explained by appearance in TV shows. Over the years, people have modified the game by
-  adding layers like colour foam, paint, ketchup, and shot glasses on the targets to increase the complexity and engagement of
-  the game. This demonstrates the potential to accommodate additional layers while preserving the original structure of the game.
+  Bending In the center of the display surface
+  towards the user triggers a navigation wheel
+  that is displayed as an overlay on the center
+  of the flexible device. Performing a swipe
+  gesture in any direction on the rear side
+  triggers a zoom-in in the direction of swipe
+  gesture.
 </p>
-            </div>
+<div class="col-lg-10 mx-auto">
+  <img class="img-fluid" src="img/bs-01.jpg" alt="">
+</div>
+<p class="text-black-50">
+  <i>Bending in and swiping in the SE direction for Zoom-In
+in the same direction.</i>
+</p>
+
+<h4 class="text-black">Zooming Out</h4>
+<div class="col-lg-10 mx-auto">
+  <p class="text-black-50">
+    Bending Out the center of the display away
+  from the user triggers a navigation wheel
+  that is displayed as an overlay on the center
+  of the flexible device. Performing a swipe
+  gesture in any direction triggers a zoom-out
+  in the direction of swipe
+  </p>
+  <img class="img-fluid" src="img/bs-02.jpg" alt="">
+  <p class="text-black-50">
+    <i>Bending out and swiping in the SE direction for Zoom
+Out in the same direction.</i>
+  </p>
+</div>
+
+    </div>
 
     </section>
             <!-- Prototype -->
     <section id="#" class="about-section text-center">
 
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-black">Building the prototype</h2>
+            <h2 class="text-black">Prototype</h2>
             <div class="col-lg-10 mx-auto">
-              <img class="img-fluid" src="img/TestingTwister.jpg" alt="">
+              <img class="img-fluid" src="img/bs-03.jpg" alt="">
             </div>
             <p class="text-black-50">
-              <i>Which involved a bit of dancing on the table.</i>
+              <i>Rear of the handheld prototype [L] and The working prototype [R].</i>
             </p>
-            <h4 class="text-black">The Pressure-Sensitive Twister Mat</h4>
             <p class="text-black-50">
-              Each of the 24 sensors can detect if they are being pressed and they send this data to the two Arduino Megas.
-              The two Arduino Megas are in the master-slave type of connection to accommodate 24 input points for these sensors.
-              The sensor data is received by processing through serial communication and in turn displays the relevant data on
-              the projected screen
-              </p>
-              <div class="col-lg-10 mx-auto">
-                <img class="img-fluid" src="img/Prototype.jpg" alt="">
-              </div>
-              <p class="text-black-50">
-                <i>With a lot of wires and a few weekends, were got these DIY pressure sensors to talk to the computer.</i>
-              </p>
-              <h4 class="text-black">The Projected Screen</h4>
-              <p class="text-black-50">
-                The projected screen comprises a circle for each player which determines the colour of the target (Red, Yellow, Green or Blue) and the text on the center suggests the limb (Right Arm, Left Arm, Right Leg, Left Leg).
-                The circle size reduces continuously until it disappears and the next combination of limbs and colour is displayed.
-                The display screen gives feedback if the scores are increasing or decreasing and if the target is matched or the player is
-                on the wrong target.
-                </p>
-                <div class="col-lg-10 mx-auto">
-                  <img class="img-fluid" src="img/Twister.gif" alt="">
-                </div>
-                <p class="text-black-50">
-                  <i>With a lot of wires and a few weekends, were got these DIY pressure sensors to talk to the computer.</i>
-                </p>
+              The flexible sheet is made out of
+thin laminated paper. A bend
+sensor is located horizontally on
+the rear side to detect the bending
+direction. A conductive touch
+sensor is used to detect the
+direction of swipe gestures
+            <div class="col-lg-10 mx-auto">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RyYHSqGFORA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-    </section>
-            <!-- User Study-->
-    <section id="#" class="about-section text-center">
 
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-black">User Study</h2>
-            <p class="text-black-50">
-              We conducted a within-subject comparative evaluation with 16 participants. They played the original Twister as a
-              control condition and ReCreation as the experiment condition. We had two participants playing together for each session. </p>
-              <h4 class="text-black">Data Collection and Analysis</h4>
-              <p class="text-black-50">
-                Our questions comprised of 15 five-point likert scale questions for each condition. At the end of the interview,
-                we asked a set of open-ended questions.
-The likert questions were based on the Game Experience Questionnaire, where we selected the themes that were relevant to the traditional game
-and ReCreation. The high level themes were Challenge, Competition, Positive, and Negative emotions. To cover the social aspect of the game, we looked
-further into the literature to include questions about camaraderie and connection with the other. </p>
-  <p class="text-black-50">At the end of the questionnaire, we had open-ended questions that covered the role of the digital augmentation on the engagement
-of the participants. We also asked their preference between the two games and design suggestions for the digital game. </p>
             </div>
-        </div>
-      </div>
+
     </section>
     <!-- Publication & Presentation-->
     <section id="#" class="about-section text-center">
@@ -180,7 +169,8 @@ of the participants. We also asked their preference between the two games and de
     <p class="text-black-50">
       The 16th IFIP TC.13 International Conference on Human-Computer Interaction, 2017, Mumbai, India
  <a class="nav-link js-scroll-trigger" href="https://link.springer.com/chapter/10.1007/978-3-319-68059-0_45">[PDF]</a></p>
-      <p class="text-black-50">The ACM Canadian Celebration of Women in Computing, 2017, Montreal, Canada</p>
+      <p class="text-black-50">The ACM Canadian Celebration of Women in Computing, 2017, Montreal, Canada
+       <a class="nav-link js-scroll-trigger" href="http://cil.csit.carleton.ca/b/wp-content/uploads/2017/11/BendSwipe_Poster.pdf">[PDF]</a></p>
     </div>
     </div>
     </section>
